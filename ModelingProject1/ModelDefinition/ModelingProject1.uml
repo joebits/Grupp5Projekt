@@ -318,7 +318,7 @@
             isComposite="false" />
           <property
             Id="fa78c154-c2c1-4f51-bcf9-e28f308418f0"
-            name="ID"
+            name="UserID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -399,7 +399,7 @@
     <packageHasNamedElement>
       <class
         Id="32b79e37-16f4-40d7-8f12-29d68dcdda9f"
-        name="Products"
+        name="Product"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -427,7 +427,20 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f7614770-8279-4885-b59e-2a22e7ff50f9"
+                      name="Lower"
+                      value="M" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4461d9f5-b6d6-477d-8fc8-cc9a55fe1e31"
+                      name="Upper"
+                      value="M" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -444,13 +457,13 @@
                     <literalString
                       Id="c4f4f945-b77f-44ec-b89d-198034fa7561"
                       name="Lower"
-                      value="M" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="dc27c556-1ad8-4b2d-a691-a5d8eb108f29"
                       name="Upper"
-                      value="M" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -460,7 +473,7 @@
         <ownedAttributesInternal>
           <property
             Id="a1084a83-b170-44a8-97e3-25b24d51c2d1"
-            name="ID"
+            name="ProductID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -570,7 +583,7 @@
         <ownedAttributesInternal>
           <property
             Id="20992a2e-db55-4ba5-a5c9-cc7163845dd8"
-            name="ID"
+            name="OrderHistoryID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -597,16 +610,6 @@
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="bc58f83d-2263-4d86-8abb-4f31703131ae"
-            name="Attribute1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
@@ -774,7 +777,7 @@
             isComposite="false" />
           <property
             Id="63f22311-0c0c-4fc5-995d-5d31ad5dc3b4"
-            name="ID"
+            name="UOID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -818,7 +821,18 @@
             isComposite="false" />
           <property
             Id="938dfb89-4c91-4a73-ac9c-e11f1c2e473f"
-            name="ID"
+            name="CID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d12435a7-9133-4810-a64a-b9275ee0da75"
+            name="ProdutctQuantity"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -862,7 +876,7 @@
             isComposite="false" />
           <property
             Id="cabcfba6-d857-4590-874c-9f4b25b7be5a"
-            name="ID"
+            name="AddressID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -982,7 +996,7 @@
             isComposite="false" />
           <property
             Id="e0ecc8e0-4423-4a41-88ae-61202ef519e9"
-            name="ID"
+            name="UAID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
