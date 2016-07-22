@@ -1,0 +1,246 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+/*@media (min-width: 1200px) {
+    .container{
+        max-width: 90%;
+    }
+}*/
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+    background-color:#F7F7F7;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar{
+       background-color: #fff;
+   }
+
+   .navbar a{
+       font-family: 'Open Sans', sans-serif;
+       font-weight: 700;
+       text-transform: uppercase;
+       color: white;
+   }
+
+   #searchInput{
+       width: 200px;
+   }
+   
+   .navbar-brand {
+     margin-top: 5px;
+     margin-left: 0.5rem;
+   }
+
+   a {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    }
+
+    .navbar-nav>li>a{
+            font-size: 14px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+    }
+
+    .navbar-nav>li>a span.glyphicon{
+        font-size:18px;
+    }
+
+    /*.navbar-fixed-top{
+        top: 20px;
+    }*/
+
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+        background-color: transparent;
+        color: #333;
+}
+
+.intro{
+    display: block;
+    text-align:center;
+}
+
+.center{
+    float: none;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.centered-items{
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel{
+    margin-top: 7em;
+}
+#myCarousel .item {height:400px;}
+#slide1{
+    background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+}
+#slide2{
+    background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+}
+#slide3{
+    background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.thumbnails{
+    margin: 20px 0;
+}
+
+.thumbnail{
+    position: relative;
+    border: none;
+}
+.thumbnail h3{
+    margin: 0 0 10px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:800;
+}
+
+.thumbnail p{
+    margin: 0 0 10px;
+    line-height: 20px;
+    font-weight:500;
+    color: #1B1B1E;
+    margin: 15px;
+}
+
+.thumbnail img{
+    margin-bottom:5px;
+    width: 100%;
+}
+
+.thumbnail .price {
+    font-size: 22px;
+    position: absolute;
+    top: -10px;
+    right:-10px;
+    padding: 10px;
+}
+
+.thumbnail .price sup{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.thumbnail span.glyphicon{
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.shoutout h3{
+    font-weight: 800;
+    text-align:center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.caption .btn-link{
+    padding:0px;
+}
+.caption .btn-link .glyphicon{
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.caption .btn-link .glyphicon:hover{
+    text-decoration: none;
+}
+
+/*.thumbnail .caption{
+    background-color: #B9BAA3;
+}*/
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	.thumbnail .price {
+        font-size: 14px;
+    }
+    .thumbnail .price sup{
+        font-size:10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+    #myCarousel .item { height: 500px; }
+
+    #slide1 {
+    background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+    }
+    #slide2 {
+    background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+    }
+    #slide3 {
+    background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+    #myCarousel .item { height: 500px; }
+
+    #slide1 {
+    background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+    }
+    #slide2 {
+    background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+    }
+    #slide3 {
+    background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+    }
+}
