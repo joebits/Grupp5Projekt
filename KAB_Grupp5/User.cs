@@ -92,5 +92,17 @@ namespace KAB_Grupp5
             {
             }
         }
+
+        public bool IsAdmin
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
     }
 }
