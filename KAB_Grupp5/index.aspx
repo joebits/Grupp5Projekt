@@ -97,7 +97,7 @@
                         <div class="caption">
                             <h3>Binders</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique urna erat, in molestie lectus pellentesque
+                                Lorem ipsum dolor sit amet, consectetaur adipiscing elit. Donec tristique urna erat, in molestie lectus pellentesque
 								vitae. Nunc pellentesque, lacus id scelerisque aliquet.
                             </p>
                             <p>
