@@ -6,9 +6,8 @@ using System.ComponentModel;
 
 namespace KAB_Grupp5
 {
-    public class Product
+    public class Cart
     {
-
         public int ID
         {
             get
@@ -21,7 +20,7 @@ namespace KAB_Grupp5
             }
         }
 
-        public int Quantity
+        public list<Product> Products
         {
             get
             {
@@ -33,31 +32,7 @@ namespace KAB_Grupp5
             }
         }
 
-        public string Description
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public int Price
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public int Name
+        public int UserID
         {
             get
             {

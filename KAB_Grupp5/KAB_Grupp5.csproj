@@ -186,6 +186,7 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="Admin.cs" />
+    <Compile Include="Cart.cs" />
     <Compile Include="Category.aspx.cs">
       <DependentUpon>Category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8a41aecd-3978-4bae-a40c-7a0beb787995" name="UMLClassDiagram1" linkedPackageId="a2bef3a8-9d31-4281-ba8d-11ea6d91ac92" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8a41aecd-3978-4bae-a40c-7a0beb787995" name="EML" linkedPackageId="a2bef3a8-9d31-4281-ba8d-11ea6d91ac92" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="d63bf17f-ef2f-4bc6-be24-7f33f8da8328" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -161,6 +161,9 @@
           <property Id="1bbeedd5-ba68-4e51-8a1c-c8568b6e6c2f" name="Measurements" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4dbf3fbd-d77d-4101-afe3-f9a44b92f1a2" />
           </property>
+          <property Id="d20860f8-0083-428d-9959-5203585b59aa" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3173195b-ccd7-43f4-aa9e-b0822d7ba2af" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -182,6 +185,9 @@
           </property>
           <property Id="65adcbc0-3d3d-4220-ace0-12b71b4ac77b" name="ProductQuantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="abf3f045-8970-4791-a2a9-f0a3be8800e5" />
+          </property>
+          <property Id="aed4ca26-af38-4284-8c24-e1bdf30c8b8e" name="OrderDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab34af89-1b24-4a2b-b529-a71b0e6f397c" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -250,9 +256,6 @@
           <property Id="822ee39a-591e-45eb-96e4-38463ac31ef1" name="OHID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="05600802-f195-42be-89bf-4ffdbb6ed2a0" />
           </property>
-          <property Id="a8501a96-9424-40f3-b9bd-631b9a479f69" name="UOID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="63f22311-0c0c-4fc5-995d-5d31ad5dc3b4" />
-          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -265,9 +268,6 @@
           </property>
           <property Id="35bad208-73b0-4c6a-a648-52a905a48978" name="PID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7766a697-fbd9-41b8-9c88-229d13ecf5bc" />
-          </property>
-          <property Id="e0b7d430-901b-42a1-aa8a-5229a9ac4281" name="CID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="938dfb89-4c91-4a73-ac9c-e11f1c2e473f" />
           </property>
           <property Id="777fa10f-d371-4690-b3cf-575255acf8f3" name="ProdutctQuantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d12435a7-9133-4810-a64a-b9275ee0da75" />
@@ -334,9 +334,6 @@
           </property>
           <property Id="8ed27b15-6367-4474-82a7-1ba8a27d0a29" name="UID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="60604d0c-9c01-4f1e-80af-3fb8a4237ced" />
-          </property>
-          <property Id="9015bb4c-22b5-4ec8-ac95-eb371af27fdf" name="UAID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e0ecc8e0-4423-4a41-88ae-61202ef519e9" />
           </property>
         </ownedAttributesInternal>
       </class>
